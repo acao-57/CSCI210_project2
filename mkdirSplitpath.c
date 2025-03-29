@@ -41,7 +41,7 @@ void mkdir(char pathName[]){
     {
         if (strcmp(child->name, baseName) == 0 && child->fileType == 'D') //checks if the target directory already exists in current directory
         {
-            printf("MKDIR ERROR: directory %s already exists\n", dirName);
+            printf("MKDIR ERROR: directory %s already exists\n", pathName);
             return;
         }
         child = child->siblingPtr;  //cycles thru all siblings
